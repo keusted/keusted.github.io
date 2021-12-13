@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<link rel="icon" href="lock.png">
+<title>Cyber Security</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('AI-and-Cybersecurity.png');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("locks.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+BODY{
+overflow-x:hidden;
+}
+
+.s1
+{
+  position  : absolute;
+  font-size : 10pt;
+  color     : blue;
+  visibility: hidden;
+}
+
+.s2
+{
+  position  : absolute;
+  font-size : 18pt;
+  color     : red;
+	visibility : hidden;
+}
+
+.s3
+{
+  position  : absolute;
+  font-size : 14pt;
+  color     : gold;
+	visibility : hidden;
+}
+
+.s4
+{
+  position  : absolute;
+  font-size : 12pt;
+  color     : lime;
+	visibility : hidden;
+}
+
+//-->
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="page 2.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> CAREERS</a>
+    <a href="page 3.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> EXAMPLES</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="page 2.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CAREERS</a>
+    <a href="page 3.html" class="w3-bar-item w3-button" onclick="toggleFunction()">EXAMPLES</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">AI in CYBER <span class="w3-hide-small">SECURITY</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">BASIC SUMMARY</h3>
+  <p class="w3-center"><em>About Cyber Security</em></p>
+  <p>Cyber Security is the technology that defends people’s private information on the internet from attacks and people who are illegally trying to access their data. When exploring this website, you will learn more on how AI will help deveope cyber security technology, what careers you may find in this field, and even examples of the technology being used today.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>What goes into Cyber Security</b></p><br>
+      <img src="robot head.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>AI is going to hold a very big part in cyber security and will most likely be used by both cyber criminals and cyber security teams. This technology will soon be the only way to prevent and/or support attacks as the complexity grows in both areas. For example, AI will be used to identify “fake news” across social media platforms and inform people interested in the information that the new their reading is invalid.
+</p>
+    </div>
+  </div>
+ 
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">IMAGE REPRESENTATIONS</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">IMAGES</h3>
+  <p class="w3-center"><em>Here are some representations of cyber security.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="guy_touching_tablet.jpg_fit=scale" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Possible Security Breach">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="code.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Code">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Cyber-Security-Analyst.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Security">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Information-Security-Analysts.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Safety">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="breach.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Breach">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="Microsoft_Cybersecurity.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Connect with Cyber Security">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="ai.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AI">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="AI and Humans.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="AI and Humans">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  
+  <p>Made by Katrina Eusted</p>
+  <p>Last updated: 12/10/21</p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<DIV ID="div1" CLASS="s1">*</DIV>
+<DIV ID="div2" CLASS="s2">*</DIV>
+<DIV ID="div3" CLASS="s3">*</DIV>
+<DIV ID="div4" CLASS="s4">*</DIV>
+
+<p align="center"><font face="arial" size="-2">This free script provided by</font><br>
+<font face="arial, helvetica" size="-2"><a href="http://javascriptkit.com">JavaScript
+Kit</a></font></p>
+
+<SCRIPT LANGUAGE="javascript" TYPE="text/javascript">
+
+/*
+Script by Mike McGrath- http://website.lineone.net/~mike_mcgrath
+Featured on JavaScript Kit (http://javascriptkit.com)
+For this and over 400+ free scripts, visit http://javascriptkit.com
+*/
+
+//Updated Feb 20th, 08 by JavaScriptKit.com: Script now compatible in IE7/FF 
+
+var standardbody=(document.compatMode=="CSS1Compat")? document.documentElement : document.body //create reference to common "body" across doctypes
+
+var nav = (!document.all || window.opera);
+var tmr = null;
+var spd = 50;
+var x = 0;
+var x_offset = 5;
+var y = 0;
+var y_offset = 15;
+
+document.onmousemove = get_mouse; 
+
+function get_mouse(e)
+{    
+  x = (nav) ? e.pageX : event.clientX+standardbody.scrollLeft;
+  y = (nav) ? e.pageY : event.clientY+standardbody.scrollTop;
+  x += x_offset;
+  y += y_offset;
+  beam(1);     
+}
+
+function beam(n)
+{
+  if(n<5)
+  {
+				document.getElementById('div'+n).style.top=y+'px'
+				document.getElementById('div'+n).style.left=x+'px'
+				document.getElementById('div'+n).style.visibility='visible'
+    n++;
+    tmr=setTimeout("beam("+n+")",spd);
+  }
+  else
+  {
+     clearTimeout(tmr);
+     fade(4);
+  }   
+} 
+
+function fade(n)
+{
+  if(n>0) 
+  {
+				document.getElementById('div'+n).style.visibility='hidden'
+    n--;
+    tmr=setTimeout("fade("+n+")",spd);
+  }
+  else clearTimeout(tmr);
+} 
+
+// -->
+</SCRIPT>
+</body>
+</html>
